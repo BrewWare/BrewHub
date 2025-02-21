@@ -1,0 +1,59 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">BrewHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Submit Homebrew</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Console
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/gb">Gameboy</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/gbc">Gameboy Color</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/gba">Gameboy Advanced</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/nds">NDS(i)</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/3ds">3DS</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/nes">NES</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/snes">SNES</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/n64">N64</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/gc">Gamecube</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/wii">Wii</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/wiiu">Wii U</a></li>
+            <li><a class="dropdown-item" href="{{ site.baseurl }}/switch">Switch</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Emulators</a></li>
+            <li><a class="dropdown-item" href="#">Firmware</a></li>
+            <li><a class="dropdown-item" href="#">Games</a></li>
+            <li><a class="dropdown-item" href="#">Themes</a></li>
+            <li><a class="dropdown-item" href="#">Translations</a></li>
+            <li><a class="dropdown-item" href="#">Utilties</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Cheats</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>

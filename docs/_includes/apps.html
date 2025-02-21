@@ -1,0 +1,62 @@
+{% if page.console == "gb" %}
+{% assign apps = site.data.apps | where:"console", "gb" %}
+{% elsif page.console == "gbc" %}
+{% assign apps = site.data.apps | where:"console", "gbc" %}
+{% elsif page.console == "gba" %}
+{% assign apps = site.data.apps | where:"console", "gba" %}
+{% elsif page.console == "nds" %}
+{% assign apps = site.data.apps | where:"console", "nds" %}
+{% elsif page.console == "3ds" %}
+{% assign apps = site.data.apps | where:"console", "3ds" %}
+{% elsif page.console == "nes" %}
+{% assign apps = site.data.apps | where:"console", "nes" %}
+{% elsif page.console == "snes" %}
+{% assign apps = site.data.apps | where:"console", "snes" %}
+{% elsif page.console == "n64" %}
+{% assign apps = site.data.apps | where:"console", "n64" %}
+{% elsif page.console == "gc" %}
+{% assign apps = site.data.apps | where:"console", "gc" %}
+{% elsif page.console == "wii" %}
+{% assign apps = site.data.apps | where:"console", "wii" %}
+{% elsif page.console == "wiiu" %}
+{% assign apps = site.data.apps | where:"console", "wiiu" %}
+{% elsif page.console == "switch" %}
+{% assign apps = site.data.apps | where:"console", "switch" %}
+{% else %}
+{% assign apps = site.data.apps %}
+{% endif %}
+
+{% if page.category == "emulator" %}
+{% assign apps = apps | where:"categories", "emulator" %}
+{% elsif page.category == "firmware" %}
+{% assign apps = apps | where:"categories", "firm" %}
+{% elsif page.category == "game" %}
+{% assign apps = apps | where:"categories", "game" %}
+{% elsif page.category == "theme" %}
+{% assign apps = apps | where:"categories", "theme" %}
+{% elsif page.category == "romhack" %}
+{% assign apps = apps | where:"categories", "romhack" %}
+{% elsif page.category == "theme" %}
+{% assign apps = apps | where:"categories", "theme" %}
+{% elsif page.category == "translation" %}
+{% assign apps = apps | where:"categories", "translation" %}
+{% elsif page.category == "utilities" %}
+{% assign apps = apps | where:"categories", "utilities" %}
+{% endif %}
+
+<div class="container" id="apps-container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+    {% for app in apps %} 
+  <div class="col d-flex align-items-stretch">
+    <div class="card" id="{{ id }}" style="width: 18rem;">
+      <img src="{{ site.baseurl }}/assets/images/app_icon/{{ app.titleid }}.png" class="card-img-top rounded mx-auto d-block" alt="Icon">
+      <div class="card-body">
+        <h5 class="card-title">{{ app.name }}</h5>
+        <p class="card-text">{{ app.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  </div>  
+</div>
