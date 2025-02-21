@@ -21,18 +21,15 @@
 title: BrewHub
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+  BrewHub is an open-source platform designed to be a central repository for homebrew app information. It aims to simplify the process of discovering, sharing, and managing homebrew applications across various platforms. Think of it as a community-driven app store specifically for homebrew.
+baseurl: "/BrewHub" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  BrewWare
+github_username: BrewWare
 
 # Build settings
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
